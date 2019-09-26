@@ -13,16 +13,48 @@
     <link rel="stylesheet" href="vendor/bootstrap-theme.min.css" -integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" -crossorigin="anonymous">
 
     <style>
+    	/*
+    	wget -O /tmp/google-font-download wget https://raw.githubusercontent.com/neverpanic/google-font-download/ba0f7fd6de0933c8e5217fd62d3c1c08578b6ea7/google-font-download
+		(cd vendor; bash /tmp/google-font-download -f woff,woff2 -o google-fonts.css Sanchez:400 "Roboto Slab: 100")
+		cat vendor/google-fonts.css | sed "s/url('/\0vendor\//g" && rm vendor/google-fonts.css
+    	*/
+		@font-face {
+			font-family: 'Sanchez';
+			font-style: normal;
+			font-weight: 400;
+			src:
+				local('Sanchez'),
+				local('Sanchez-Regular'),
+				/* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR-w.woff */
+				url('vendor/Sanchez_400.woff') format('woff'),
+				/* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR_Q.woff2 */
+				url('vendor/Sanchez_400.woff2') format('woff2');
+		}
+		@font-face {
+			font-family: 'Roboto Slab';
+			font-style: normal;
+			font-weight:  100;
+			src:
+				local('Roboto Slab Regular'),
+				local('RobotoSlab-Regular'),
+				/* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qM.woff */
+				url('vendor/Roboto_Slab__100.woff') format('woff'),
+				/* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2 */
+				url('vendor/Roboto_Slab__100.woff2') format('woff2');
+		}
+
+
       body {
         background: white;
         color: #222d3c;
         overflow-x: hidden;
         overflow-y: scroll;
-        font-size: 15px;
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
       }
 
       a {
-        color: #324968;
+        color: #1D4E70;
         text-decoration: underline;
       }
 
@@ -33,6 +65,7 @@
       }
         header #brand {
           font-weight: bold;
+          font-family: Sanchez, serif;
         }
         header a {
           display: inline-block; /* no word wrap */
@@ -59,16 +92,26 @@
         padding-bottom: 30vh;
       }
 
+      #pages .row {
+      	margin-top: 15px;
+      	margin-bottom: 15px;
+      }
+
+      h1, h2, h3 {
+        font-family: Sanchez, serif;
+      }
       h1 {
-        margin: 30px 0;
+        margin: 45px 0;
         line-height: 100%;
         font-size: 150%;
         font-weight: bold;
+        color: black;
       }
 
       h2 {
-        margin: 1.75em 0 .75em 0;
-        font-size: 24px;
+        margin: 15px 0;
+        line-height: 100%;
+        font-size: 125%;
         font-weight: bold;
         color: black;
       }
@@ -80,14 +123,38 @@
         margin: 1.33em 0 .33em 0;
       }
 
+      hr {
+      	margin: 30px 0;
+      }
+
+      div#updated {
+      	font-size: 85%;
+      	margin: -40px 0 35px 0;
+      	color: #666;
+      	font-family: sans-serif;
+      }
+
       p, li {
-        line-height: 160%;
+        line-height: 140%;
         margin-bottom: 1.25em;
       }
 
       p.caption {
         font-size: 88%;
         color: #335260;
+      }
+
+      span.header {
+      	display: inline-block;
+      	border-radius: 10px;
+        font-family: Sanchez, serif;
+        font-size: 90%;
+        font-style: italic;
+        background-color: #1D4E70;
+        color: white;
+        padding: 0px 6px;
+        margin-right: .5em;
+        cursor: default;
       }
 
       footer {
@@ -108,19 +175,57 @@
 	    </div>
     </header>
 
-    <div id="pages" class="container">
-      <div id="page-home">
+    <div id="pages">
+      <div id="page-home" class="container">
         <script>
       	  if (window.location.hash == "" || window.location.hash == "")
       	    document.getElementById("page-home").style.display = "block";
         </script>
 
         <h1>
-          impeachment.guide
+          We&rsquo;re Tracking the Impeachment Inquiry of President Donald Trump
         </h1>
+        <div id="updated">
+        	Last Updated Sept. X, 2019
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-7">
+
+		        <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which 3/5<sup>ths</sup> of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 3/5<sup>ths</sup> of senators also vote yes, then president would be removed from office.</p>
+
+		        <hr>
+
+		        <p><span class="header">Inquiry Opened</span> In <b>September 2019</b>, it became known that a government employee filed a whistleblower complaint documenting that President Trump urged Ukraine president Volodymr Zelensky to investigate actions by presidential candidate Joe Biden, Trump&rsquo;s chief rival at the time, and his son. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted overwhelmingly on non-binding resolutions demanding access to the whistleblower complaint, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a> and subsequently the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>. On Sept. X, 2019, Speaker of the House Nancy Pelosi announced an inquiry into the impeachment of President Donald Trump would begin.</p>
+
+		    </div>
+		    <div class="col-sm-5">
+
+		    	<p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
+		    	<p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
+		    	<p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> resolutions demanding the whistleblower complaint (Sept. 24-25, 2019)</p>
+		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h548">
+			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="img-responsive" alt="House vote demanding whistleblower complaint">
+			    </a>
+		    </div>
+		</div>
+
+        <div class="row">
+        	<div class="col-sm-7">
+        		<p><span class="header">Previous Impeachment Votes</span> This is not the first time impeachment of President Trump was proposed &mdash; in fact, the House of Representatives has already voted on impeachment three times, rejecting impeachment each time. In <b>December 2017</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2017/h658">58 to 364</a> and in <b>January 2018</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2018/h35">66 to 355</a> against impeachment based on Trump’s equivocating comments after the white supremacy march in Charlottesville, Virginia and his calls as a presidential candidate to ban all Muslim immigration. In <b>July 2019</b>, the House voted <a href="https://www.govtrack.us/congress/votes/116-2019/h483">95 to 332</a> against impeachment based on Trump’s racist tweet that four congresswomen should “go back” to where they came from. [<a href="https://govtrackinsider.com/which-house-democrats-changed-their-votes-on-impeachment-from-2018-to-2019-cda9ce9f81c0">See how representatives&rsquo; votes changed</a>.]</p>
+        	</div>
+        	<div class="col-sm-5">
+		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h483">
+			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="img-responsive" alt="July 2019 House vote on impeachment">
+			    </a>
+			    <p><center><small><i>This was a vote to kill an impeachment resolution.</i></small></center></p>
+        	</div>
+        </div>
+
+
       </div> <!-- /#page-home -->
 
-      <div id="page-next">
+      <div id="page-next" class="container">
         <h1>
           What to Expect Next
         </h1>
