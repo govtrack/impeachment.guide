@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Guide to the 2019 Impeachment Inquiry of President Trump</title>
+
+    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
+    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" -integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" -crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/bootstrap-theme.min.css" -integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" -crossorigin="anonymous">
+
+    <style>
+      body {
+        background: white;
+        color: #222d3c;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-size: 15px;
+      }
+
+      a {
+        color: #324968;
+        text-decoration: underline;
+      }
+
+      header, footer {
+      	background-color: rgb(157, 33, 70);
+      	color: white;
+      	padding: 1em;
+      }
+        header #brand {
+          font-weight: bold;
+        }
+        header a {
+          display: inline-block; /* no word wrap */
+          margin-right: 1.1em;
+          text-decoration: none;
+        }
+       	header a, footer a {
+          color: inherit;
+        }
+          header a:hover, footer a:hover {
+            text-decoration: underline;
+            color: inherit;
+          }
+          header a:focus, footer a:focus {
+            text-decoration: underline;
+            color: #FFA;
+          }
+         header #credit {
+         	font-size: 75%;
+         }
+
+      #pages > div {
+        display: none;
+        padding-bottom: 30vh;
+      }
+
+      h1 {
+        margin: 30px 0;
+        line-height: 100%;
+        font-size: 150%;
+        font-weight: bold;
+      }
+
+      h2 {
+        margin: 1.75em 0 .75em 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+      }
+      	h2:first-child {
+      		margin-top: 0;
+      	}
+
+      h3 {
+        margin: 1.33em 0 .33em 0;
+      }
+
+      p, li {
+        line-height: 160%;
+        margin-bottom: 1.25em;
+      }
+
+      p.caption {
+        font-size: 88%;
+        color: #335260;
+      }
+
+      footer {
+      	padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+	    <div class="container">
+          <a id="brand" href="#">impeachment.guide</a>
+          <a href="#next">What To Expect</a>
+          <a href="#history">History</a>
+          <a href="#documents">Documents</a>
+          <div id="credit">
+        	A project of <a href="https://www.govtrack.us">GovTrack.us</a>
+          </div>
+	    </div>
+    </header>
+
+    <div id="pages" class="container">
+      <div id="page-home">
+        <script>
+      	  if (window.location.hash == "" || window.location.hash == "")
+      	    document.getElementById("page-home").style.display = "block";
+        </script>
+
+        <h1>
+          impeachment.guide
+        </h1>
+      </div> <!-- /#page-home -->
+
+      <div id="page-next">
+        <h1>
+          What to Expect Next
+        </h1>
+      </div> <!-- /#page-next -->
+    </div>
+
+    <footer>
+    	<div class="container">
+    		<b>impeachment.guide</b> is a project of <a href="https://www.govtrack.us">GovTrack.us</a>.
+	    	For 15 years GovTrack has been helping everyone learn about and track the activities of the United States Congress. This is not a government website. You are encouraged to reuse any material on this site. For questions, email <a href="mailto:hello@impeachment.guide">hello@impeachment.guide</a>.
+	    </div>
+    </footer>
+
+    <!-- VENDOR https://code.jquery.com/jquery-3.1.1.slim.min.js -->
+    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+    <script src="vendor/jquery-3.1.1.slim.min.js" -integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" -crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap.min.js" -integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" -crossorigin="anonymous"></script>
+    
+    <script>
+    function load_page() {
+      var pageid = window.location.hash.substring(1);
+      var pagediv = $('#page-home')[0];
+      $('#pages > div').each(function() {
+      	if ($(this).attr('id') == "page-" + pageid)
+      		pagediv = this;
+      })
+      $('#pages > div').hide();
+      $(pagediv).show();
+      window.scrollTo(0, 0);
+    } 
+    $(window).on('hashchange', load_page);
+    load_page();
+    </script>    
+  </body>
+</html>
