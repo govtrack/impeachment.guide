@@ -9,8 +9,8 @@
 
     <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
     <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css -->
-    <link rel="stylesheet" href="vendor/bootstrap.min.css" -integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" -crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/bootstrap-theme.min.css" -integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" -crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <style>
     	/*
@@ -140,7 +140,9 @@
       }
 
       p.caption {
+        text-align: center;
         font-size: 88%;
+        font-style: italic;
         color: #335260;
       }
 
@@ -166,9 +168,8 @@
     <header>
 	    <div class="container">
           <a id="brand" href="#">impeachment.guide</a>
-          <a href="#next">What To Expect</a>
-          <a href="#history">History</a>
-          <a href="#documents">Documents</a>
+          <a href="#charges">Possible Charges</a>
+          <a href="#references">Reference Documents</a>
           <div id="credit">
         	A project of <a href="https://www.govtrack.us">GovTrack.us</a>
           </div>
@@ -186,7 +187,7 @@
           We&rsquo;re Tracking the Impeachment Inquiry of President Donald Trump
         </h1>
         <div id="updated">
-        	Last Updated Sept. X, 2019
+        	Last Updated Sept. 27, 2019
         </div>
 
         <div class="row">
@@ -196,7 +197,7 @@
 
 		        <hr>
 
-		        <p><span class="header">Inquiry Opened</span> In <b>September 2019</b>, it became known that a government employee filed a whistleblower complaint documenting that President Trump urged Ukraine president Volodymr Zelensky to investigate actions by presidential candidate Joe Biden, Trump&rsquo;s chief rival at the time, and his son. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted overwhelmingly on non-binding resolutions demanding access to the whistleblower complaint, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a> and subsequently the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>. On Sept. X, 2019, Speaker of the House Nancy Pelosi announced an inquiry into the impeachment of President Donald Trump would begin.</p>
+		        <p><span class="header">Inquiry Opened</span> In <b>September 2019</b>, it became known that a government employee filed a whistleblower complaint documenting that President Trump urged Ukraine president Volodymr Zelensky to investigate actions by presidential candidate Joe Biden, Trump&rsquo;s chief rival at the time, and his son. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted overwhelmingly on non-binding resolutions demanding access to the whistleblower complaint, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a> and subsequently the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>. On Sept. 24, 2019, Speaker of the House Nancy Pelosi announced an inquiry into the impeachment of President Donald Trump would begin.</p>
 
 		    </div>
 		    <div class="col-sm-5">
@@ -218,18 +219,26 @@
 		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h483">
 			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="img-responsive" alt="July 2019 House vote on impeachment">
 			    </a>
-			    <p><center><small><i>This was a vote to kill an impeachment resolution.</i></small></center></p>
+			    <p class="caption">This was a vote to kill an impeachment resolution.</p>
         	</div>
         </div>
 
 
       </div> <!-- /#page-home -->
 
-      <div id="page-next" class="container">
+      <div id="page-charges" class="container">
         <h1>
-          What to Expect Next
+          Possible Charges
         </h1>
-      </div> <!-- /#page-next -->
+        <p>Coming soon...</p>
+      </div> <!-- /#page-charges -->
+
+      <div id="page-references" class="container">
+        <h1>
+          Reference Documents
+        </h1>
+        <p>Coming soon...</p>
+      </div> <!-- /#page-references -->
     </div>
 
     <footer>
@@ -241,8 +250,8 @@
 
     <!-- VENDOR https://code.jquery.com/jquery-3.1.1.slim.min.js -->
     <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
-    <script src="vendor/jquery-3.1.1.slim.min.js" -integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" -crossorigin="anonymous"></script>
-    <script src="vendor/bootstrap.min.js" -integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" -crossorigin="anonymous"></script>
+    <script src="vendor/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <script>
     function load_page() {
