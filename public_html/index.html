@@ -66,6 +66,7 @@
         header #brand {
           font-weight: bold;
           font-family: Sanchez, serif;
+          letter-spacing: -.5px;
         }
         header a {
           display: inline-block; /* no word wrap */
@@ -83,13 +84,16 @@
             text-decoration: underline;
             color: #FFA;
           }
+          header a.active {
+          	font-weight: bold;
+          }
          header #credit {
          	font-size: 75%;
          }
 
       #pages > div {
         display: none;
-        padding-bottom: 30vh;
+        padding-bottom: 3em;
       }
 
       #pages .row {
@@ -109,9 +113,9 @@
       }
 
       h2 {
-        margin: 15px 0;
+        margin: 30px 0;
         line-height: 100%;
-        font-size: 125%;
+        font-size: 110%;
         font-weight: bold;
         color: black;
       }
@@ -159,6 +163,16 @@
         cursor: default;
       }
 
+      span.header2 {
+      	display: inline-block;
+        font-family: Sanchez, serif;
+        font-weight: bold;
+        font-size: 105%;
+        padding: 0px 6px;
+        margin-right: .5em;
+        cursor: default;
+      }
+
       footer {
       	padding: 1em;
       }
@@ -168,8 +182,9 @@
     <header>
 	    <div class="container">
           <a id="brand" href="#">impeachment.guide</a>
+          <a href="#">Overview</a>
           <a href="#charges">Possible Charges</a>
-          <!--<a href="#references">Reference Documents</a>-->
+          <a href="#timeline">How Impeachment Works</a>
           <div id="credit">
         	A project of <a href="https://www.govtrack.us">GovTrack.us</a>
           </div>
@@ -187,27 +202,41 @@
           We&rsquo;re Tracking the Impeachment Inquiry of President Donald Trump
         </h1>
         <div id="updated">
-        	Last Updated Sept. 27, 2019
+        	Last Updated Sept. 28, 2019
         </div>
 
         <div class="row">
         	<div class="col-sm-7">
-
 		        <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which a majority of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 2/3<sup>rds</sup> of senators also vote yes, then president would be removed from office.</p>
 
-		        <hr>
+		        <div class="panel panel-default">
+		        	<div class="panel-body">
+				        <h2 style="margin: 0 0 10px 0;">What&rsquo;s happening now</h2>
 
-            <p><span class="header">Key Documents Released</span> On <b>Sept. 25, 2019</b>, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a>. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted unanimously on Sept. 24-25, 2019 on non-binding resolutions demanding access to the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>, and minutes before the Director of National Intelligence&rsquo;s Sept. 26, 2019 <a href="https://www.c-span.org/video/?464509-1/acting-director-national-intelligence-maguire-testifies-whistleblower-complaint">appearance</a> before the House Intelligence Commitee, the White House made the complaint available to Congress, which then made it available to the public.</p>
+				        <p style="margin: 0">Six House committees already investigating the President &mdash; the House Judiciary, Oversight, Ways and Means, Financial Services, Intelligence, and Foreign Affairs committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment. <a href="#charges">Read Possible Charges &raquo;</a></p>
+			        </div>
+				</div>
+		    </div>
+		    <div class="col-sm-5">
+		    	<h2 style="font-size: 100%; margin: 0 0 1em 0;">Key Documents</h2>
+		    	<p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
+		    	<p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
+		    </div>
+		</div> <!-- /.row -->
+
+        <h2>Chronology</h2>
+
+        <div class="row">
+        	<div class="col-sm-7">
+            	<p><span class="header">Key Documents Released</span> On <b>Sept. 25, 2019</b>, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a>. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted unanimously on Sept. 24-25, 2019 on non-binding resolutions demanding access to the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>, and minutes before the Director of National Intelligence&rsquo;s Sept. 26, 2019 <a href="https://www.c-span.org/video/?464509-1/acting-director-national-intelligence-maguire-testifies-whistleblower-complaint">appearance</a> before the House Intelligence Commitee, the White House made the complaint available to Congress, which then made it available to the public.</p>
 
 		        <p><span class="header">Inquiry Opened</span> In September 2019, it became known that a government employee filed a whistleblower complaint documenting that on July 25, 2019, President Trump urged Ukraine president Volodymr Zelenskyy to investigate alleged actions by presidential candidate Joe Biden, Trump&rsquo;s chief 2020 election rival at the time. The President also asked Ukraine to locate the Democratic National Committee&rsquo;s 2016 email server (which was hacked by Russia in an effort to help the President win the 2016 election), and to do both investigations in collaboration with the President&rsquo;s personal lawyer. On <b>Sept. 24, 2019</b>, Speaker of the House Nancy Pelosi announced an inquiry into the impeachment of President Donald Trump would begin.</p>
 
 
 		    </div>
 		    <div class="col-sm-5">
-
-		    	<p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
-		    	<p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
 		    	<p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> resolutions demanding the whistleblower complaint (Sept. 24-25, 2019)</p>
+
 		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h548">
 			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="img-responsive" alt="House vote demanding whistleblower complaint">
 			    </a>
@@ -238,20 +267,43 @@
 
         <p><span class="header">Foreign Assistance in the Election</span> The White House has said that in a July 25, 2019 phone call, President Trump asked Ukraine president Volodymr Zelenskyy for a “favor” to investigate the President’s chief political opponent and to locate the Democratic National Committee (DNC)’s 2016 email server. The President asked Zelenskyy to coordinate the investigations with the President’s personal lawyer, Rudy Giuliani. Although framed as an official investigation into corruption, the focus on the President’s political opponents and the involvement of the President’s personal lawyer suggest the President’s intent was political. Foreign entities are prohibited by law from making contributions to political campaigns, including by providing favors of material value, and an impeachment charge could be based on a violation of law or perceived norms for foreign interference in elections.</p>
 
-        <p><span class="header">Extortion or Quid Pro Quo</span> One of the President’s foreign policy goals has been to get European countries to step up their support for military security, rather than relying on the United States. According to the White House, in the July 25, 2019 Trump-Zelenskyy phone call, the President told Zelenskyy that he thought the United States’s security aid to Ukraine made the nations’ relationship not “reciprocal,” and then in his next sentence asked Zelenskyy for the “favor” described above. Although not stated in clear words, the President and Zelenskyy likely understood the President as asking Ukraine to make the relationship reciprocal by performing the favor. Zelenskyy may also have known, although it was not discussed on the call, that shortly before the call, the President had halted that security aid. Providing aid in exchange for an investigation would be a quid pro quo, and withholding aid to coerce Ukraine to perform an investigation would be extortion &mdash; both of which are generally accepted tools in foreign policy and well within the President’s foreign policy powers.</p>
-
-        <p><span class="header">Mishandling Records</span> The whistleblower complaint alleges that the verbatim transcript of the July 25, 2019 Trump-Zelenskyy phone call and other politically sensitive documents were purposefully misfiled in a location meant for classified materials, even though the call and the other documents did not involve classified information, in order to restrict access to the documents. Several laws including the President Records Act require presidential records like the verbatim transcript to be preserved but may not require that the records be stored in any particular electronic system. (What has often been described as the publicc transcript of the call is actually a summary of the call produced by the White House &mdash; it is not known whether the White House accurately summarized the verbatim transcript.)</p>
+        <p><span class="header">Extortion or Quid Pro Quo</span> One of the President’s foreign policy goals has been to get European countries to step up their support for military security, rather than relying on the United States. According to the White House, in the July 25, 2019 Trump-Zelenskyy phone call, the President told Zelenskyy that he thought the United States’s security aid to Ukraine made the nations’ relationship not “reciprocal,” and then in his next sentence asked Zelenskyy for the “favor” described above. Although not stated in clear words, the President and Zelenskyy likely understood the President as asking Ukraine to make the relationship reciprocal by performing the favor. Zelenskyy may also have known, although it was not discussed on the call, that shortly before the call, <a href="https://www.msnbc.com/morning-joe/watch/trump-shifts-explanation-for-withholding-ukraine-aid-69864517615">the President had halted that security aid, with shifting public reasons</a>. Providing aid in exchange for an investigation would be a quid pro quo, and withholding aid to coerce Ukraine to perform an investigation would be extortion &mdash; both of which are generally accepted tools in foreign policy and well within the President’s foreign policy powers.</p>
 
         <p><span class="header">Emoluments</span> According to the White House, in the July 25, 2019 phone call between President Trump and Ukraine president Volodymr Zelenskyy, Zelenskyy said he had stayed at the President’s Trump Tower property on his last visit to the United States, among other thanks and praise, to which the President responded positively.  Since the President personally benefits from business at his properties, foreign leaders’ stays at his properties may be a constitutionally prohibited emolument.</p>
 
+        <p><span class="header">Coverup &ndash; Mishandling Records</span> A verbatim transcript of the July 25, 2019 Trump-Zelenskyy phone call <a href="https://www.cnn.com/2019/09/27/politics/donald-trump-ukraine-transcript-white-house/index.html">was filed in a location meant for classified materials</a>, the White House confirmed, even though the call did not involve classified information, according to the whistleblower complaint, in order to restrict access to it. Several laws including the Presidential Records Act require presidential records like the verbatim transcript to be preserved but may not require that the records be stored in any particular electronic system. (What has often been described as the publicc transcript of the call is actually a summary of the call produced by the White House &mdash; it is not known whether the White House accurately summarized the verbatim transcript.)</p>
+
+        <p><span class="header">Coverup &ndash; Withholding Whistleblower Report</span> Although the whistleblower report was written on Aug. 12, 2019 and was deemed by a Trump-appointed nonpartisan civil servant to be credible, it was withheld from Congress by a Trump-appointed political appointee, the Director of National Intelligence, <a href="https://www.washingtonpost.com/politics/2019/09/22/whistleblower-complaint-has-congress-trump-an-impasse-heres-what-law-says/">possibly in violation of existing law</a> that requires that credible complaints be forwarded confidentially to Congress.</p>
+
+
+
       </div> <!-- /#page-charges -->
 
-      <div id="page-references" class="container">
+      <div id="page-timeline" class="container">
         <h1>
-          Reference Documents
+          How Impeachment &amp; Removal Works
         </h1>
-        <p>Coming soon...</p>
-      </div> <!-- /#page-references -->
+
+        <p>Impeachment is the first step in the Constitutional process for Congress to remove the president or other government officers. Although the Constitution sets a broad two-step process for impeachment and removal, there are many steps that have evolved from previous times impeachment and removal have been used on lower government officers, such as judges. No president has ever been removed from office.</p>
+
+		<h2>Impeachment in the House of Representatives</h2>
+
+		<p><span class="header2">① Impeachment Inquiry</span> On Sept. 24, 2019, Speaker of the House Nancy Pelosi announced that the House of Representatives will move forward with an official impeachment inquiry. This announcement alone is enough to begin official impeachment proceedings, starting with the directive that six House committees continue their investigations of the President “under that umbrella of impeachment inquiry.”</p>
+		<p><span class="header2">② Investigative Authority</span> In the <a href="https://www.nytimes.com/2019/09/13/us/politics/trump-impeachment-definition.html">cases of Presidents Nixon and Clinton</a>, a resolution was necessary to grant the House Judiciary Committee with authorities to conduct an investigation into impeachment. However, under the current House rules, the committee already has those authorities. <b style="color: rgb(175, 33, 70)">&larr; We are here.</b></p>
+		<p><span class="header2">③ Committee Reports</span> After investigating, committees will report their findings to the House as a whole. In the past, the House Judiciary Committee has voted on whether to recommend impeachment and has reported an impeachment resolution with specific allegations of misconduct. Each investigating committee may report separate findings.</p>
+		<p><span class="header2">④ Vote on Impeachment</span> The House would then vote on an impeachment resolution containing articles of impeachment, which are the charges of misconduct. This vote only requires a simple majority for passage. If passed, the subject of the inquiry is impeached &mdash; which means the matter is referred next to the Senate.</p>
+
+		<h2>Trial in the Senate</h2>
+
+		<p><span class="header2">⑤ Preparation for a Trial</span> If the House chooses to impeach, there will be a trial in the Senate to determine if the President is guilty. To start this process, the House will select “managers” to present evidence to the Senate and to subpoena witnesses, and the Senate will issue a writ of summons to the impeached official to appear.</p>
+		<p><span class="header2">⑥ Trial</span> The trial is roughly analogous to a criminal court trial, with the House managers playing the role of the prosecution, the Senate as the jury, the Chief Justice of the Supreme Court as the judge, and the impeached official is the defendant. However, the Constitution is clear that it is not a criminal trial, since the standards for evidence and conviction are up to the Senate.</p>
+		<p><span class="header2">⑦ Deliberation</span> Similar to a jury, the Senate meets in closed session to deliberate the substance of the trial.</p>
+		<p><span class="header2">⑧ Vote on Conviction</span> Finally, the Senate votes on each article of impeachment separately. These votes require a ⅔rd majority to convict, which results in removal from office. 	The Senate may also vote on whether the convicted official becomes disqualified from holding a government position again, for which only a simple majority is required.</p>
+
+		<h2>Appealing a Conviction</h2>
+		<p><span class="header2">⑨ Judicial Review</span> Impeachment proceedings have been challenged in federal court on a number of occasions. In the unlikely event that the president is impeached and the Senate convicts him, there may be lawsuits to appeal the conviction. However, courts have said in the past that Congress&rsquo;s power to impeach is broad and in many cases is not subject to judicial review.</p>
+
+      </div> <!-- /#page-timeline -->
     </div>
 
     <footer>
@@ -269,6 +321,8 @@
     <script>
     function load_page() {
       var pageid = window.location.hash.substring(1);
+
+      // Hide/show the page divs.
       var pagediv = $('#page-home')[0];
       $('#pages > div').each(function() {
       	if ($(this).attr('id') == "page-" + pageid)
@@ -277,6 +331,13 @@
       $('#pages > div').hide();
       $(pagediv).show();
       window.scrollTo(0, 0);
+
+      // Activate the corresponding menu.
+      $('header a').removeClass('active');
+      $('header a:not([id])').each(function() {
+      	if ($(this).attr('href') == "#" + pageid)
+      		$(this).addClass('active');
+      });
     } 
     $(window).on('hashchange', load_page);
     load_page();
