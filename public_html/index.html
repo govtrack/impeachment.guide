@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Guide to the 2019 Impeachment Inquiry of President Trump</title>
 
-    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
-    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css -->
-    <link rel="stylesheet" href="vendor/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- (cd vendor; grep VENDOR ../index.html | sed "s/.*VENDOR/wget -N/" | sed "s/--\>//" | sh) -->
+    <!-- VENDOR https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
     	/*
@@ -49,7 +47,6 @@
         color: #222d3c;
         overflow-x: hidden;
         overflow-y: scroll;
-        font-size: 16px;
         font-family: 'Roboto Slab', serif;
       }
 
@@ -94,11 +91,6 @@
       #pages > div {
         display: none;
         padding-bottom: 3em;
-      }
-
-      #pages .row {
-      	margin-top: 15px;
-      	margin-bottom: 15px;
       }
 
       h1, h2, h3 {
@@ -147,11 +139,12 @@
         margin-bottom: 1.25em;
       }
 
-      p.caption {
+      .card {
+      	margin-bottom: 30px;
+      }
+
+      figcaption {
         text-align: center;
-        font-size: 88%;
-        font-style: italic;
-        color: #335260;
       }
 
       span.header {
@@ -213,12 +206,13 @@
         	<div class="col-sm-7">
 		        <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which a majority of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 2/3<sup>rds</sup> of senators also vote yes, then president would be removed from office.</p>
 
-		        <div class="panel panel-default" style="background-color: #FCFCFB;">
-		        	<div class="panel-body">
-				        <h2 style="margin: 0 0 10px 0;">What&rsquo;s happening now</h2>
-
-				        <p style="margin: 0">Six House committees already investigating the President &mdash; the House Judiciary, Oversight, Ways and Means, Financial Services, Intelligence, and Foreign Affairs committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment. <a href="#charges">Read Possible Charges &raquo;</a></p>
-			        </div>
+				<div class="card">
+				  <div class="card-body">
+				    <h5 class="card-title">What&rsquo;s happening now</h5>
+				    <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+				    <p class="card-text">Six House committees already investigating the President &mdash; the House Judiciary, Oversight, Ways and Means, Financial Services, Intelligence, and Foreign Affairs committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment.</p>
+				    <a href="#charges" class="card-link">Read Possible Charges &raquo;</a>
+				  </div>
 				</div>
 		    </div>
 		    <div class="col-sm-5">
@@ -243,11 +237,16 @@ Impeachment Inquiry Against Trump?</a> [NYT]
 
 		    </div>
 		    <div class="col-sm-5">
-		    	<p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> resolutions demanding the whistleblower complaint (Sept. 24-25, 2019)</p>
+		    	<h2>Senate and House resolutions demanding the whistleblower complaint</h2>
+		    	<p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate resolution</a> (Sept. 24, 2019)</p>
+		    	<p><a href="https://www.govtrack.us/congress/votes/116-2019/h548">House vote</a> (Sept. 25, 2019)</p>
 
-		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h548">
-			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="img-responsive" alt="House vote demanding whistleblower complaint">
-			    </a>
+				<figure class="figure">
+			      <a href="https://www.govtrack.us/congress/votes/116-2019/h548">
+				    <img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="figure-img img-fluid rounded" alt="House vote demanding whistleblower complaint">
+				  </a>					
+				  <figcaption class="figure-caption">House vote demanding whistleblower complaint</figcaption>
+				</figure>
 		    </div>
 		</div>
 
@@ -256,10 +255,12 @@ Impeachment Inquiry Against Trump?</a> [NYT]
         		<p><span class="header">Previous Impeachment Votes</span> This is not the first time impeachment of President Trump was proposed &mdash; in fact, the House of Representatives has already voted on impeachment three times, rejecting impeachment each time. In <b>December 2017</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2017/h658">58 to 364</a> and in <b>January 2018</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2018/h35">66 to 355</a> against impeachment based on Trump’s equivocating comments after the white supremacy march in Charlottesville, Virginia and his calls as a presidential candidate to ban all Muslim immigration. In <b>July 2019</b>, the House voted <a href="https://www.govtrack.us/congress/votes/116-2019/h483">95 to 332</a> against impeachment based on Trump’s racist tweet that four congresswomen should “go back” to where they came from. [<a href="https://govtrackinsider.com/which-house-democrats-changed-their-votes-on-impeachment-from-2018-to-2019-cda9ce9f81c0">See how representatives&rsquo; votes changed</a>.]</p>
         	</div>
         	<div class="col-sm-5">
-		    	<a href="https://www.govtrack.us/congress/votes/116-2019/h483">
-			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="img-responsive" alt="July 2019 House vote on impeachment">
-			    </a>
-			    <p class="caption">This was a vote to kill an impeachment resolution.</p>
+				<figure class="figure">
+		    	  <a href="https://www.govtrack.us/congress/votes/116-2019/h483">
+			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="figure-img img-fluid rounded" alt="July 2019 House vote on impeachment">
+			      </a>
+				  <figcaption class="figure-caption">Vote to kill earlier 2019 impeachment resolution</figcaption>
+				</figure>
         	</div>
         </div>
 
@@ -321,11 +322,12 @@ Impeachment Inquiry Against Trump?</a> [NYT]
 	    </div>
     </footer>
 
-    <!-- VENDOR https://code.jquery.com/jquery-3.1.1.slim.min.js -->
-    <!-- VENDOR https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
-    <script src="vendor/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="vendor/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <!-- VENDOR https://code.jquery.com/jquery-3.3.1.slim.min.js -->
+    <!-- VENDOR https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js -->
+	<script src="vendor/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+	<script src="vendor/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script>
     function load_page() {
       var pageid = window.location.hash.substring(1);
