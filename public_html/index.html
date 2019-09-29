@@ -336,8 +336,9 @@
 
     <footer>
     	<div class="container">
-    		<b>impeachment.guide</b> is a project of <a href="https://www.govtrack.us">GovTrack.us</a>.
-	    	For 15 years GovTrack has been helping everyone learn about and track the activities of the United States Congress. This is not a government website. You are encouraged to reuse any material on this site. For questions, email <a href="mailto:hello@impeachment.guide">hello@impeachment.guide</a>.
+    		<p><b>impeachment.guide</b> is a project of <a href="https://www.govtrack.us">GovTrack.us</a>.
+	    	For 15 years GovTrack has been helping everyone learn about and track the activities of the United States Congress. This is not a government website. You are encouraged to reuse any material on this site. For questions, email <a href="mailto:hello@impeachment.guide">hello@impeachment.guide</a>.</p>
+	    	<p>If you find this site helpful, please consider <a href="https://www.patreon.com/govtrack">supporting our work</a>.</p>
 	    </div>
     </footer>
 
@@ -370,6 +371,18 @@
     } 
     $(window).on('hashchange', load_page);
     load_page();
-    </script>    
+    </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1190841-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-1190841-7');
+	</script>
+
+
   </body>
 </html>
