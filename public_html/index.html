@@ -11,35 +11,35 @@
     <link rel="stylesheet" href="vendor/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-    	/*
-    	wget -O /tmp/google-font-download wget https://raw.githubusercontent.com/neverpanic/google-font-download/ba0f7fd6de0933c8e5217fd62d3c1c08578b6ea7/google-font-download
-		(cd vendor; bash /tmp/google-font-download -f woff,woff2 -o google-fonts.css Sanchez:400 "Roboto Slab: 100")
-		cat vendor/google-fonts.css | sed "s/url('/\0vendor\//g" && rm vendor/google-fonts.css
-    	*/
-		@font-face {
-			font-family: 'Sanchez';
-			font-style: normal;
-			font-weight: 400;
-			src:
-				local('Sanchez'),
-				local('Sanchez-Regular'),
-				/* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR-w.woff */
-				url('vendor/Sanchez_400.woff') format('woff'),
-				/* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR_Q.woff2 */
-				url('vendor/Sanchez_400.woff2') format('woff2');
-		}
-		@font-face {
-			font-family: 'Roboto Slab';
-			font-style: normal;
-			font-weight:  100;
-			src:
-				local('Roboto Slab Regular'),
-				local('RobotoSlab-Regular'),
-				/* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qM.woff */
-				url('vendor/Roboto_Slab__100.woff') format('woff'),
-				/* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2 */
-				url('vendor/Roboto_Slab__100.woff2') format('woff2');
-		}
+      /*
+      wget -O /tmp/google-font-download wget https://raw.githubusercontent.com/neverpanic/google-font-download/ba0f7fd6de0933c8e5217fd62d3c1c08578b6ea7/google-font-download
+    (cd vendor; bash /tmp/google-font-download -f woff,woff2 -o google-fonts.css Sanchez:400 "Roboto Slab: 100")
+    cat vendor/google-fonts.css | sed "s/url('/\0vendor\//g" && rm vendor/google-fonts.css
+      */
+    @font-face {
+      font-family: 'Sanchez';
+      font-style: normal;
+      font-weight: 400;
+      src:
+        local('Sanchez'),
+        local('Sanchez-Regular'),
+        /* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR-w.woff */
+        url('vendor/Sanchez_400.woff') format('woff'),
+        /* from https://fonts.gstatic.com/s/sanchez/v7/Ycm2sZJORluHnXbIfmlR_Q.woff2 */
+        url('vendor/Sanchez_400.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight:  100;
+      src:
+        local('Roboto Slab Regular'),
+        local('RobotoSlab-Regular'),
+        /* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qM.woff */
+        url('vendor/Roboto_Slab__100.woff') format('woff'),
+        /* from https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2 */
+        url('vendor/Roboto_Slab__100.woff2') format('woff2');
+    }
 
 
       body {
@@ -56,9 +56,9 @@
       }
 
       header, footer {
-      	background-color: rgb(157, 33, 70);
-      	color: white;
-      	padding: 1em;
+        background-color: rgb(157, 33, 70);
+        color: white;
+        padding: 1em;
       }
         header #brand {
           font-weight: bold;
@@ -70,7 +70,7 @@
           margin-right: 1.1em;
           text-decoration: none;
         }
-       	header a, footer a {
+        header a, footer a {
           color: inherit;
         }
           header a:hover, footer a:hover {
@@ -82,10 +82,10 @@
             color: #FFA;
           }
           header a.active {
-          	font-weight: bold;
+            font-weight: bold;
           }
          header #credit {
-         	font-size: 75%;
+          font-size: 75%;
          }
 
       #pages > div {
@@ -111,27 +111,27 @@
         font-weight: bold;
         color: black;
       }
-      	h2:first-child {
-      		margin-top: 0;
-      	}
-      	.col-sm-5 h2 {
-      		font-size: 100%;
-      		margin-bottom: 1em;
-      	}
+        h2:first-child {
+          margin-top: 0;
+        }
+        .col-sm-5 h2 {
+          font-size: 100%;
+          margin-bottom: 1em;
+        }
 
       h3 {
         font-size: 100%;
       }
 
       hr {
-      	margin: 30px 0;
+        margin: 30px 0;
       }
 
       div#updated {
-      	font-size: 85%;
-      	margin: -25px 0 30px 0;
-      	color: #666;
-      	font-family: sans-serif;
+        font-size: 85%;
+        margin: -25px 0 30px 0;
+        color: #666;
+        font-family: sans-serif;
       }
 
       p, li {
@@ -140,7 +140,7 @@
       }
 
       .card {
-      	margin-bottom: 30px;
+        margin-bottom: 30px;
       }
 
       figcaption {
@@ -148,8 +148,8 @@
       }
 
       span.header {
-      	display: inline-block;
-      	border-radius: 10px;
+        display: inline-block;
+        border-radius: 10px;
         font-family: Sanchez, serif;
         font-size: 90%;
         font-style: italic;
@@ -161,7 +161,7 @@
       }
 
       span.header2 {
-      	display: inline-block;
+        display: inline-block;
         font-family: Sanchez, serif;
         font-weight: bold;
         font-size: 105%;
@@ -171,122 +171,151 @@
       }
 
       footer {
-      	padding: 1em;
+        padding: 1em;
       }
     </style>
   </head>
   <body>
     <header>
-	    <div class="container">
+      <div class="container">
           <a id="brand" href="#">impeachment.guide</a>
           <a href="#">Overview</a>
           <a href="#charges">Possible Charges</a>
           <a href="#howitworks">How Impeachment Works</a>
           <div id="credit">
-        	A project of <a href="https://www.govtrack.us">GovTrack.us</a>
+          A project of <a href="https://www.govtrack.us">GovTrack.us</a>
           </div>
-	    </div>
+      </div>
     </header>
 
     <div id="pages">
       <div id="page-home" class="container">
         <script>
-      	  if (window.location.hash == "" || window.location.hash == "")
-      	    document.getElementById("page-home").style.display = "block";
+          if (window.location.hash == "" || window.location.hash == "")
+            document.getElementById("page-home").style.display = "block";
         </script>
 
         <h1>
           We&rsquo;re Tracking the Impeachment Inquiry of President Donald Trump
         </h1>
         <div id="updated">
-        	Last Updated Oct. 4, 2019
+          Last Updated Oct. 4, 2019
         </div>
 
         <div class="row">
-        	<div class="col-sm-7">
-		        <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which a majority of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 2/3<sup>rds</sup> of senators also vote yes, then president would be removed from office.</p>
+          <div class="col-sm-7">
+            <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which a majority of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 2/3<sup>rds</sup> of senators also vote yes, then president would be removed from office.</p>
 
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">What&rsquo;s happening now</h5>
-				    <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-            <p class="card-text">Democrats and Republicans both generally now agree on the facts &mdash; that President Trump asked Ukraine and China to investigate an election rival &mdash; but disagree on whether that action warrants impeachment.</p>
-				    <p class="card-text">Six House committees &mdash; including the House Intelligence, Foreign Affairs, and Oversight committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment.</p>
-				    <a href="#charges" class="card-link">Read Possible Charges &raquo;</a>
-				    <a href="#howitworks" class="card-link">How Impeachment Works &raquo;</a>
-				  </div>
-				</div>
-		    </div>
-		    <div class="col-sm-5">
-		    	<h2>Key Documents</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">What&rsquo;s happening now</h5>
+            <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+            <p class="card-text">Democrats and Republicans both generally now agree on the facts &mdash; that President Trump asked Ukraine to investigate an election rival &mdash; but disagree on whether that action warrants impeachment.</p>
+            <p class="card-text">Six House committees &mdash; including the House Intelligence, Foreign Affairs, and Oversight committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment.</p>
+            <a href="#charges" class="card-link">Read Possible Charges &raquo;</a>
+            <a href="#howitworks" class="card-link">How Impeachment Works &raquo;</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-5">
+          <h2>Key Documents</h2>
 
           <p><a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">Text messages between ambassadors Taylor and Sondland and special envoy Volker</a> (July 25-Sept. 9, 2019; released Oct. 3, 2019)</p>
 
-          <p><a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">Video of President Trump suggesting Ukraine and China should investigate Joe Biden</a> (Oct. 3, 2019)</p>
+          <p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
+          <p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
 
-		    	<p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
-		    	<p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
-
-		    	<h2>Other Resources</h2>
-		    	<p><a href="https://www.nytimes.com/interactive/2019/us/politics/trump-impeachment-congress-list.html">Who Supports an Impeachment Inquiry Against Trump?</a> [NYT]
-		    </div>
-		</div> <!-- /.row -->
-
-        <h2>Chronology</h2>
-
-        <div class="row">
-          <div class="col-sm-7">
-            <p><span class="header">Obstruction</span> The House Committee on Oversight <a href="https://www.nytimes.com/interactive/2019/10/04/us/politics/president-trump-impeachment-inquiry.html">subpoenaed a slew of documents</a> from White House staff, including Vice President Mike Pence, Chief of Staff Mick Mulvaney, and Secretary of State Mike Pompeo. In response, the White House sent a letter to the House stating that it <a href="https://www.cnn.com/2019/10/08/politics/wh-letter-to-pelosi/index.html">will not cooperate with the subpoenas or the impeachment inquiry</a> because, they say, the House is not affording the President due process rights as he would have in a criminal trial &mdash; but the Constitution is clear that an impeachment is not a criminal trial. Refusal to cooperate with subpoenas could likely become another impeachment charge, as it was in <a href="https://watergate.info/impeachment/articles-of-impeachment">the case of President Richard Nixon</a>.</p>
-          </div>
+          <h2>Other Resources</h2>
+          <p><a href="https://www.nytimes.com/interactive/2019/us/politics/trump-impeachment-congress-list.html">Who Supports an Impeachment Inquiry Against Trump?</a> [NYT]
         </div>
+    </div> <!-- /.row -->
 
-        <div class="row">
-          <div class="col-sm-7">
-            <p><span class="header">Ambassadors&rsquo; Roles</span> <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">Text messages between U.S. ambassadors</a> released by the House Foreign Affairs Committee on <b>Oct. 3, 2019</b> show a debate over whether President Trump was withholding aide to Ukraine and a White House visit by the Ukrainian president in exchange for an investigation into Joe Biden. Kurt Volker, a part-time, volunteer &ldquo;special envoy&rdquo; to Ukraine, was also interviewed on Oct. 3, 2019 by the same committee in a closed session &mdash; Democrats and Republicans have given inconsistent accounts of the substance of the interview. It was also reported that <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">a previous ambassador to Ukraine was fired earlier in the year for not pushing Ukraine on the investigation</a>. And on Oct 4., 2019, <a href="https://www.nytimes.com/2019/10/04/world/europe/ukraine-biden-burisma.html">Ukraine said it would open an investigation</a>.</p>
-            <p><span class="header">Confirmation</span> President Trump asked Ukraine and China to investigate Joe Biden during a press conference on the White House lawn [<a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">video</a>], also on Oct. 3, 2019.</p>
-          </div>
-          <div class="col-sm-5" style="margin-bottom: 25px;">
-            <a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">
-              <img src="media/20191003cnn.png" class="img-fluid" style="border: 1px solid black;">
+    <h2>Chronology</h2>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">Ambassador fired</span>  On <strong>May 20, 2019</strong>, U.S. Ambassador to Ukraine Marie Yovanovitch <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">was fired allegedly for not pushing Ukraine to investigate</a> former Vice President Joe Biden, President Trump&rsquo;s chief 2020 election rival at the time, and his son, Hunter Biden. Trump and his associates accuse Biden of using his position as vice president to help a Ukrainian energy company which made payments to his son, although the accusation is unsubstantiated.</p>
+      </div>
+    </div>
+        
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">An alleged &ldquo;quid&rdquo;</span>  On <strong>July 18, 2019</strong>, President Trump <a href="https://www.washingtonpost.com/national-security/trump-ordered-hold-on-military-aid-days-before-calling-ukrainian-president-officials-say/2019/09/23/df93a6ca-de38-11e9-8dc8-498eabc129a0_story.html">ordered a hold on military aid to Ukraine</a>.</p>
+        
+        <p><span class="header">Incriminating texts</span>  In <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">a series of text messages</a> between <strong>July 19 and Sept. 9, 2019</strong>, volunteer special envoy to Ukraine Kurt Volker and Ambassadors Gordon Soland and Bill Taylor discussed a phone call between President Trump and Ukraine President Zelenskyy. Prior to the Trump-Zelenskyy call, Volker told Zelenskyy&rsquo;s top adviser, &ldquo;assuming President Z convinces Trump he will investigate . . . we will nail down date for visit to Washington.&rdquo; Texts following the call show a debate between the ambassadors over whether Trump was withholding aid to Ukraine and an invitation to visit the White House in exchange for an investigation into Joe Biden.</p>
+        
+        <p><span class="header">Trump-Zelenskyy call</span>  In the <strong>July 25, 2019</strong> call between President Trump and Ukraine President Zelenskyy, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump urged</a> Zelenskyy to investigate alleged actions by Joe Biden and to locate the Democratic National Committee&rsquo;s 2016 email server (which was hacked by Russia in an effort to help the President win the 2016 election), and to do both investigations in collaboration with the President&rsquo;s personal lawyer.</p>
+      </div>
+
+      <div class="col-sm-5" style="margin-bottom: 25px;">
+        <figure class="figure">
+          <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">
+            <img src="media/20191003texts.png" class="figure-img img-fluid" style="border: 1px solid black;">
+          </a>
+          <figcaption class="figure-caption">Text messages between U.S. ambassadors</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">Whistleblower complaint</span>  A government employee filed <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">a confidential whistleblower complaint</a> on <strong>Aug. 12, 2019</strong>, documenting the Trump-Zelenskyy phone call, efforts to restrict access to records related to the call, and the events leading up to the call. The existence of the complaint was not made public until late September. In the following weeks, Trump-appointed officials disagreed about whether to share the complaint with Congress and ultimately withheld it.</p>
+
+        <p><span class="header">Impeachment inquiry</span>  On <strong>Sept. 21, 2019</strong>, key elements of the whistleblower complaint were <a href="https://www.wsj.com/articles/trump-defends-conversation-with-ukraine-leader-11568993176">leaked to the media</a>. On <strong>Sept. 24, 2019</strong>, Speaker of the House Nancy Pelosi <a href="https://www.cnn.com/2019/09/24/politics/democrats-impeachment-strategy/index.html">announced an inquiry into the impeachment of President Trump</a>, saying that "the President has admitted to asking the President of Ukraine to take actions which would benefit him politically."&nbsp;</p>
+
+        <p><span class="header">Release of documents</span>  The next day on <strong>Sept. 25, 2019 </strong>the White House released a summary of the Trump-Zelenskyy call. And after the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted unanimously on Sept. 24-25 on non-binding resolutions demanding access to the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>, and minutes before the Director of National Intelligence&rsquo;s <strong>Sept. 26, 2019</strong> <a href="https://www.c-span.org/video/?464509-1/acting-director-national-intelligence-maguire-testifies-whistleblower-complaint">appearance</a> before the House Intelligence Committee, the White House made the complaint available to Congress, which then made it available to the public.</p>
+      </div>
+      <div class="col-sm-5">
+        <h2>Senate and House resolutions demanding the whistleblower complaint</h2>
+        <p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate resolution</a> (Sept. 24, 2019)</p>
+        <p><a href="https://www.govtrack.us/congress/votes/116-2019/h548">House vote</a> (Sept. 25, 2019)</p>
+        <figure class="figure">
+            <a href="https://www.govtrack.us/congress/votes/116-2019/h548">
+            <img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="figure-img img-fluid rounded" alt="House vote demanding whistleblower complaint">
+          </a>          
+          <figcaption class="figure-caption">House vote demanding whistleblower complaint</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">Text messages released</span>  <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">The text messages between U.S. ambassadors</a> were released by the House Foreign Affairs Committee on <strong>Oct. 3, 2019</strong>. On the same day, special envoy Kurt Volker, who had participated in the texts, was also interviewed by the same committee in a closed session &mdash; Democrats and Republicans have given inconsistent accounts of the substance of the interview. Additionally, <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">the reason why Ambassador Marie Yovanovitch was fired earlier in the year</a> was first reported.</p>
+        
+        <p><span class="header">An alleged &ldquo;quo&rdquo;</span>  On <strong>Oct. 4, 2019</strong>, <a href="https://www.nytimes.com/2019/10/04/world/europe/ukraine-biden-burisma.html">Ukraine said it would open an investigation</a> into the Bidens.</p>
+      </div>
+
+      <div class="col-sm-5" style="margin-bottom: 25px;">
+        <figure class="figure">
+          <a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">
+            <img src="media/20191003cnn.png" class="figure-img img-fluid" style="border: 1px solid black;">
+          </a>
+          <figcaption class="figure-caption">President Trump asked Ukraine to investigate Joe Biden during a press conference on the White House lawn on Oct. 3, 2019 [<a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">video</a>]</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">Obstruction</span>  The House Committee on Oversight <a href="https://www.nytimes.com/interactive/2019/10/04/us/politics/president-trump-impeachment-inquiry.html">subpoenaed a slew of documents</a> from White House staff, including Chief of Staff Mick Mulvaney and Secretary of State Mike Pompeo, and <a href="https://oversight.house.gov/sites/democrats.oversight.house.gov/files/documents/2019-10-04.EEC%20Engel%20Schiff%20%20re%20Request%20to%20VP%2010-04-19%20Letter%20and%20Schedule.pdf">requested documents</a> from Vice President Mike Pence without a subpoena. In response, the White House sent a letter to the House on <strong>Oct. 8, 2019</strong> stating that it <a href="https://www.cnn.com/2019/10/08/politics/wh-letter-to-pelosi/index.html">will not cooperate with the subpoenas or the impeachment inquiry</a> because, they say, the House is not affording the President due process rights as he would have in a criminal trial &mdash; but the Constitution is clear that an impeachment is not a criminal trial. Refusal to cooperate with subpoenas could likely become another impeachment charge, as it was in <a href="https://watergate.info/impeachment/articles-of-impeachment">the case of President Richard Nixon</a>.</p>
+        <p><span class="header">Yovanovitch deposition</span>  On <strong>Oct. 11, 2019</strong>, Marie Yovanovitch gave closed-door testimony to three House committees. In her opening statements <a href="https://www.apnews.com/9834cb4581c9460f9050b5d5cb544f37">obtained by the Associated Press</a>, she said she was ousted &ldquo;based, as best as I can tell, on unfounded and false claims by people with clearly questionable motives.&rdquo;</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <p><span class="header">Previous impeachment votes</span> This is not the first time impeachment of President Trump was proposed &mdash; in fact, the House of Representatives has already voted on impeachment three times, rejecting impeachment each time. In <b>December 2017</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2017/h658">58 to 364</a> and in <b>January 2018</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2018/h35">66 to 355</a> against impeachment based on Trump’s equivocating comments after the white supremacy march in Charlottesville, Virginia and his calls as a presidential candidate to ban all Muslim immigration. In <b>July 2019</b>, the House voted <a href="https://www.govtrack.us/congress/votes/116-2019/h483">95 to 332</a> against impeachment based on Trump’s racist tweet that four congresswomen should “go back” to where they came from. [<a href="https://govtrackinsider.com/which-house-democrats-changed-their-votes-on-impeachment-from-2018-to-2019-cda9ce9f81c0">See how representatives&rsquo; votes changed</a>.]</p>
+      </div>
+      <div class="col-sm-5">
+        <figure class="figure">
+            <a href="https://www.govtrack.us/congress/votes/116-2019/h483">
+            <img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="figure-img img-fluid rounded" alt="July 2019 House vote on impeachment">
             </a>
-          </div>
-        </div>
-
-        <div class="row">
-        	<div class="col-sm-7">
-            <p><span class="header">Key Documents Released</span> On <b>Sept. 25, 2019</b>, the White House released a <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">summary of the Trump-Zelenskyy call</a>. After the <a href="https://www.govtrack.us/congress/bills/116/sres325">Senate</a> and <a href="https://www.govtrack.us/congress/votes/116-2019/h548">House</a> voted unanimously on Sept. 24-25, 2019 on non-binding resolutions demanding access to the <a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">whistleblower complaint</a>, and minutes before the Director of National Intelligence&rsquo;s Sept. 26, 2019 <a href="https://www.c-span.org/video/?464509-1/acting-director-national-intelligence-maguire-testifies-whistleblower-complaint">appearance</a> before the House Intelligence Committee, the White House made the complaint available to Congress, which then made it available to the public.</p>
-
-		        <p><span class="header">Inquiry Opened</span> In September 2019, it became known that a government employee filed a whistleblower complaint documenting that on July 25, 2019, President Trump urged Ukraine president Volodymr Zelenskyy to investigate alleged actions by presidential candidate Joe Biden, Trump&rsquo;s chief 2020 election rival at the time. The President also asked Ukraine to locate the Democratic National Committee&rsquo;s 2016 email server (which was hacked by Russia in an effort to help the President win the 2016 election), and to do both investigations in collaboration with the President&rsquo;s personal lawyer. On <b>Sept. 24, 2019</b>, Speaker of the House Nancy Pelosi announced an inquiry into the impeachment of President Donald Trump would begin.</p>
-
-
-		    </div>
-		    <div class="col-sm-5">
-		    	<h2>Senate and House resolutions demanding the whistleblower complaint</h2>
-		    	<p><a href="https://www.govtrack.us/congress/bills/116/sres325">Senate resolution</a> (Sept. 24, 2019)</p>
-		    	<p><a href="https://www.govtrack.us/congress/votes/116-2019/h548">House vote</a> (Sept. 25, 2019)</p>
-
-				<figure class="figure">
-			      <a href="https://www.govtrack.us/congress/votes/116-2019/h548">
-				    <img src="https://www.govtrack.us/congress/votes/116-2019/h548/card" class="figure-img img-fluid rounded" alt="House vote demanding whistleblower complaint">
-				  </a>					
-				  <figcaption class="figure-caption">House vote demanding whistleblower complaint</figcaption>
-				</figure>
-		    </div>
-		</div>
-
-        <div class="row">
-        	<div class="col-sm-7">
-        		<p><span class="header">Previous Impeachment Votes</span> This is not the first time impeachment of President Trump was proposed &mdash; in fact, the House of Representatives has already voted on impeachment three times, rejecting impeachment each time. In <b>December 2017</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2017/h658">58 to 364</a> and in <b>January 2018</b> the House voted <a href="https://www.govtrack.us/congress/votes/115-2018/h35">66 to 355</a> against impeachment based on Trump’s equivocating comments after the white supremacy march in Charlottesville, Virginia and his calls as a presidential candidate to ban all Muslim immigration. In <b>July 2019</b>, the House voted <a href="https://www.govtrack.us/congress/votes/116-2019/h483">95 to 332</a> against impeachment based on Trump’s racist tweet that four congresswomen should “go back” to where they came from. [<a href="https://govtrackinsider.com/which-house-democrats-changed-their-votes-on-impeachment-from-2018-to-2019-cda9ce9f81c0">See how representatives&rsquo; votes changed</a>.]</p>
-        	</div>
-        	<div class="col-sm-5">
-				<figure class="figure">
-		    	  <a href="https://www.govtrack.us/congress/votes/116-2019/h483">
-			    	<img src="https://www.govtrack.us/congress/votes/116-2019/h483/card" class="figure-img img-fluid rounded" alt="July 2019 House vote on impeachment">
-			      </a>
-				  <figcaption class="figure-caption">Vote to kill earlier 2019 impeachment resolution</figcaption>
-				</figure>
-        	</div>
-        </div>
+          <figcaption class="figure-caption">Vote to kill earlier 2019 impeachment resolution</figcaption>
+        </figure>
+      </div>
+    </div>
 
 
       </div> <!-- /#page-home -->
@@ -334,47 +363,47 @@
 
         <h2>A Simple Timeline for Impeachment and Removal</h2>
 
-		<h3>Impeachment in the House of Representatives</h3>
-		<p><span class="header2">① Impeachment Inquiry</span> On Sept. 24, 2019, Speaker of the House Nancy Pelosi announced that the House of Representatives will move forward with an official impeachment inquiry. This announcement alone is enough to begin official impeachment proceedings, starting with the directive that six House committees continue their investigations of the President “under that umbrella of impeachment inquiry.”</p>
-		<p><span class="header2">② Investigative Authority</span> In the <a href="https://www.nytimes.com/2019/09/13/us/politics/trump-impeachment-definition.html">cases of Presidents Nixon and Clinton</a>, a resolution was necessary to grant the House Judiciary Committee with authorities to conduct an investigation into impeachment. However, under the current House rules, the committee already has those authorities. <b style="color: rgb(175, 33, 70)">&larr; We are here.</b></p>
-		<p><span class="header2">③ Committee Reports</span> After investigating, committees will report their findings to the House as a whole. In the past, the House Judiciary Committee has voted on whether to recommend impeachment and has reported an impeachment resolution with specific allegations of misconduct. Each investigating committee may report separate findings.</p>
-		<p><span class="header2">④ Vote on Impeachment</span> The House would then vote on an impeachment resolution containing articles of impeachment, which are the charges of misconduct. This vote only requires a simple majority for passage. If passed, the subject of the inquiry is impeached &mdash; which means the matter is referred next to the Senate.</p>
+    <h3>Impeachment in the House of Representatives</h3>
+    <p><span class="header2">① Impeachment Inquiry</span> On Sept. 24, 2019, Speaker of the House Nancy Pelosi announced that the House of Representatives will move forward with an official impeachment inquiry. This announcement alone is enough to begin official impeachment proceedings, starting with the directive that six House committees continue their investigations of the President “under that umbrella of impeachment inquiry.”</p>
+    <p><span class="header2">② Investigative Authority</span> In the <a href="https://www.nytimes.com/2019/09/13/us/politics/trump-impeachment-definition.html">cases of Presidents Nixon and Clinton</a>, a resolution was necessary to grant the House Judiciary Committee with authorities to conduct an investigation into impeachment. However, under the current House rules, the committee already has those authorities. <b style="color: rgb(175, 33, 70)">&larr; We are here.</b></p>
+    <p><span class="header2">③ Committee Reports</span> After investigating, committees will report their findings to the House as a whole. In the past, the House Judiciary Committee has voted on whether to recommend impeachment and has reported an impeachment resolution with specific allegations of misconduct. Each investigating committee may report separate findings.</p>
+    <p><span class="header2">④ Vote on Impeachment</span> The House would then vote on an impeachment resolution containing articles of impeachment, which are the charges of misconduct. This vote only requires a simple majority for passage. If passed, the subject of the inquiry is impeached &mdash; which means the matter is referred next to the Senate.</p>
 
-		<h3>Trial in the Senate</h3>
-		<p><span class="header2">⑤ Preparation for a Trial</span> If the House chooses to impeach, there will be a trial in the Senate to determine if the President is guilty. To start this process, the House will select “managers” to present evidence to the Senate and to subpoena witnesses, and the Senate will issue a writ of summons to the impeached official to appear.</p>
-		<p><span class="header2">⑥ Trial</span> The trial is roughly analogous to a criminal court trial, with the House managers playing the role of the prosecution, the Senate as the jury, the Chief Justice of the Supreme Court as the judge, and the impeached official is the defendant. However, the Constitution is clear that it is not a criminal trial, since the standards for evidence and conviction are up to the Senate.</p>
-		<p><span class="header2">⑦ Deliberation</span> Similar to a jury, the Senate meets in closed session to deliberate the substance of the trial.</p>
-		<p><span class="header2">⑧ Vote on Conviction</span> Finally, the Senate votes on each article of impeachment separately. These votes require a ⅔rd majority to convict, which results in removal from office. 	The Senate may also vote on whether the convicted official becomes disqualified from holding a government position again, for which only a simple majority is required.</p>
+    <h3>Trial in the Senate</h3>
+    <p><span class="header2">⑤ Preparation for a Trial</span> If the House chooses to impeach, there will be a trial in the Senate to determine if the President is guilty. To start this process, the House will select “managers” to present evidence to the Senate and to subpoena witnesses, and the Senate will issue a writ of summons to the impeached official to appear.</p>
+    <p><span class="header2">⑥ Trial</span> The trial is roughly analogous to a criminal court trial, with the House managers playing the role of the prosecution, the Senate as the jury, the Chief Justice of the Supreme Court as the judge, and the impeached official is the defendant. However, the Constitution is clear that it is not a criminal trial, since the standards for evidence and conviction are up to the Senate.</p>
+    <p><span class="header2">⑦ Deliberation</span> Similar to a jury, the Senate meets in closed session to deliberate the substance of the trial.</p>
+    <p><span class="header2">⑧ Vote on Conviction</span> Finally, the Senate votes on each article of impeachment separately. These votes require a ⅔rd majority to convict, which results in removal from office.  The Senate may also vote on whether the convicted official becomes disqualified from holding a government position again, for which only a simple majority is required.</p>
 
-		<h3>Appealing a Conviction</h3>
-		<p><span class="header2">⑨ Judicial Review</span> Impeachment proceedings have been challenged in federal court on a number of occasions. In the unlikely event that the president is impeached and the Senate convicts him, there may be lawsuits to appeal the conviction. However, courts have said in the past that Congress&rsquo;s power to impeach is broad and in many cases is not subject to judicial review.</p>
+    <h3>Appealing a Conviction</h3>
+    <p><span class="header2">⑨ Judicial Review</span> Impeachment proceedings have been challenged in federal court on a number of occasions. In the unlikely event that the president is impeached and the Senate convicts him, there may be lawsuits to appeal the conviction. However, courts have said in the past that Congress&rsquo;s power to impeach is broad and in many cases is not subject to judicial review.</p>
 
         <h2>Research Reports</h2>
 
         <p>These research reports provide additional information about the impeachment process.</p>
 
-    	<p><a href="https://www.everycrsreport.com/reports/R44260.html">Impeachment and Removal</a> (Congressional Research Service; Oct. 29, 2015)</p>
-    	<p><a href="https://www.everycrsreport.com/reports/R45769.html">The Impeachment Process in the House of Representatives</a> (Congressional Research Service; Aug. 12, 2019)</p>
-    	<p><a href="https://www.everycrsreport.com/files/19980916_98-763_9d27a8aa0761f1bf0148170a80258d47a16e2dc7.pdf">Congressional Resolutions on Presidential Impeachment: A Historical Overview</a> (Congressional Research Service; Sept. 16, 1998)</p>
-    	<p><a href="https://constitution.congress.gov/conan/essay/II_4_1/">Constitution Annotated: Art II., Sec. 4, Impeachment</a> (Congressional Research Service)</p>
+      <p><a href="https://www.everycrsreport.com/reports/R44260.html">Impeachment and Removal</a> (Congressional Research Service; Oct. 29, 2015)</p>
+      <p><a href="https://www.everycrsreport.com/reports/R45769.html">The Impeachment Process in the House of Representatives</a> (Congressional Research Service; Aug. 12, 2019)</p>
+      <p><a href="https://www.everycrsreport.com/files/19980916_98-763_9d27a8aa0761f1bf0148170a80258d47a16e2dc7.pdf">Congressional Resolutions on Presidential Impeachment: A Historical Overview</a> (Congressional Research Service; Sept. 16, 1998)</p>
+      <p><a href="https://constitution.congress.gov/conan/essay/II_4_1/">Constitution Annotated: Art II., Sec. 4, Impeachment</a> (Congressional Research Service)</p>
 
 
       </div> <!-- /#page-howitworks -->
     </div>
 
     <footer>
-    	<div class="container">
-    		<p><b>impeachment.guide</b> is a project of <a href="https://www.govtrack.us">GovTrack.us</a>.
-	    	For 15 years GovTrack has been helping everyone learn about and track the activities of the United States Congress. This is not a government website. You are encouraged to reuse any material on this site. For questions, email <a href="mailto:hello@impeachment.guide">hello@impeachment.guide</a>.</p>
-	    	<p>If you find this site helpful, please consider <a href="https://www.patreon.com/govtrack">supporting our work</a>.</p>
-	    </div>
+      <div class="container">
+        <p><b>impeachment.guide</b> is a project of <a href="https://www.govtrack.us">GovTrack.us</a>.
+        For 15 years GovTrack has been helping everyone learn about and track the activities of the United States Congress. This is not a government website. You are encouraged to reuse any material on this site. For questions, email <a href="mailto:hello@impeachment.guide">hello@impeachment.guide</a>.</p>
+        <p>If you find this site helpful, please consider <a href="https://www.patreon.com/govtrack">supporting our work</a>.</p>
+      </div>
     </footer>
 
     <!-- VENDOR https://code.jquery.com/jquery-3.3.1.slim.min.js -->
     <!-- VENDOR https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js -->
-	<script src="vendor/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-	<script src="vendor/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="vendor/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+  <script src="vendor/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
     function load_page() {
@@ -383,8 +412,8 @@
       // Hide/show the page divs.
       var pagediv = $('#page-home')[0];
       $('#pages > div').each(function() {
-      	if ($(this).attr('id') == "page-" + pageid)
-      		pagediv = this;
+        if ($(this).attr('id') == "page-" + pageid)
+          pagediv = this;
       })
       $('#pages > div').hide();
       $(pagediv).show();
@@ -393,23 +422,23 @@
       // Activate the corresponding menu.
       $('header a').removeClass('active');
       $('header a:not([id])').each(function() {
-      	if ($(this).attr('href') == "#" + pageid)
-      		$(this).addClass('active');
+        if ($(this).attr('href') == "#" + pageid)
+          $(this).addClass('active');
       });
     } 
     $(window).on('hashchange', load_page);
     load_page();
     </script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1190841-7"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1190841-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	  gtag('config', 'UA-1190841-7');
-	</script>
+    gtag('config', 'UA-1190841-7');
+  </script>
 
 
   </body>
