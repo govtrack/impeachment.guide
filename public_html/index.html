@@ -117,6 +117,7 @@
         .col-sm-5 h2 {
           font-size: 100%;
           margin-bottom: 1em;
+          text-align: center;
         }
 
       h3 {
@@ -132,6 +133,13 @@
         margin: -25px 0 30px 0;
         color: #666;
         font-family: sans-serif;
+      }
+
+      .card-link {
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: .25em;
+        font-size: 98%;
       }
 
       p, li {
@@ -170,6 +178,15 @@
         cursor: default;
       }
 
+      #deposition-list .row {
+        margin-bottom: 1em;
+      }
+      #deposition-list .role {
+        color: #444;
+        font-size: 93%;
+        line-height: 120%;
+      }
+
       footer {
         padding: 1em;
       }
@@ -181,6 +198,7 @@
           <a id="brand" href="#">impeachment.guide</a>
           <a href="#">Overview</a>
           <a href="#charges">Possible Charges</a>
+          <a href="#chronology">Chronology</a>
           <a href="#howitworks">How Impeachment Works</a>
           <div id="credit">
           A project of <a href="https://www.govtrack.us">GovTrack.us</a>
@@ -199,12 +217,14 @@
           We&rsquo;re Tracking the Impeachment Inquiry of President Donald Trump
         </h1>
         <div id="updated">
-          Last Updated Oct. 4, 2019
+          Last Updated Oct. 27, 2019
         </div>
 
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-md-4" style="padding-top: 1em">
             <p>An <b>impeachment inquiry</b> is a process to determine whether the House of Representatives will vote on impeachment and on what grounds. If the inquiry leads to a vote on impeachment in which a majority of representatives vote yes, then the president is impeached, which means the matter is referred to the Senate for a trial. In the Senate, if 2/3<sup>rds</sup> of senators also vote yes, then president would be removed from office.</p>
+          </div>
+          <div class="col-md-8">
 
         <div class="card">
           <div class="card-body">
@@ -212,39 +232,51 @@
             <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
             <p class="card-text">Democrats and Republicans both generally now agree on the facts &mdash; that President Trump asked Ukraine to investigate an election rival &mdash; but disagree on whether that action warrants impeachment.</p>
             <p class="card-text">Six House committees &mdash; including the House Intelligence, Foreign Affairs, and Oversight committees &mdash; will submit what they consider evidence of impeachable acts to the Judiciary committee which may then draw up charges, called articles of impeachment.</p>
-            <a href="#charges" class="card-link">Read Possible Charges &raquo;</a>
+            <a href="#charges" class="card-link">Possible Charges &raquo;</a>
+            <a href="#chronology" class="card-link">Chronology &raquo;</a>
             <a href="#howitworks" class="card-link">How Impeachment Works &raquo;</a>
           </div>
         </div>
-        </div>
-        <div class="col-sm-5">
-          <h2>Key Documents</h2>
 
-          <p><a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">Text messages between ambassadors Taylor and Sondland and special envoy Volker</a> (July 25-Sept. 9, 2019; released Oct. 3, 2019)</p>
+          </div> <!-- /col -->
+        </div> <!-- /row -->
+      </div> <!-- /#page-home -->
 
-          <p><a href="https://assets.documentcloud.org/documents/6430388/20190812-Whistleblower-Complaint-Unclass.pdf">Whistleblower Complaint</a> (Aug. 12, 2019; released Sept. 26, 2019)</p>
-          <p><a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy Call Summary</a> (July 25, 2019; released Sept. 24, 2019)</p>
-
+        <!--
           <h2>Other Resources</h2>
-          <p><a href="https://www.nytimes.com/interactive/2019/us/politics/trump-impeachment-congress-list.html">Who Supports an Impeachment Inquiry Against Trump?</a> [NYT]
-        </div>
-    </div> <!-- /.row -->
 
-    <h2>Chronology</h2>
+          <p><a href="https://www.cnn.com/interactive/2019/politics/trump-impeachment-inquiry-tracker/">List of all witness depositions</a> [CNN]</p>
+
+          <p><a href="https://www.nytimes.com/interactive/2019/us/politics/trump-impeachment-congress-list.html">Who Supports an Impeachment Inquiry Against Trump?</a> [NYT]
+       -->
+
+      <div id="page-chronology" class="container">
+    <h1>Chronology</h1>
+
+    <p style="margin: 30px 0;">Here&rsquo;s what happened, starting at the beginning.</p>
 
     <div class="row">
       <div class="col-sm-7">
-        <p><span class="header">Ambassador fired</span>  On <strong>May 20, 2019</strong>, U.S. Ambassador to Ukraine Marie Yovanovitch <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">was fired allegedly for not pushing Ukraine to investigate</a> former Vice President Joe Biden, President Trump&rsquo;s chief 2020 election rival at the time, and his son, Hunter Biden. Trump and his associates accuse Biden of using his position as vice president to help a Ukrainian energy company which made payments to his son, although the accusation is unsubstantiated.</p>
+        <p><span class="header">Ambassador fired</span>  Some time before May 3, 2019, President Trump&rsquo;s personal lawyer Rudy Giuliani <a href="https://www.foxnews.com/politics/ukraine-prosecutor-biden-burisma-back-off-state-department-files">urged the State Department to investigate</a> former Vice President Joe Biden, the President&rsquo;s chief 2020 election rival at the time, and his son, Hunter Biden. Trump and his associates accuse Biden of using his position as vice president, around 2016, to help a Ukrainian energy company which made payments to his son, although the accusation is unsubstantiated. Then on <strong>May 20, 2019</strong>, U.S. Ambassador to Ukraine Marie Yovanovitch <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">was fired allegedly for not pushing Ukraine to investigate</a> Biden. (In 2018 <a href="https://www.reuters.com/article/us-usa-trump-whistleblower-giuliani-excl/exclusive-trump-lawyer-giuliani-was-paid-500000-to-consult-on-indicted-associates-firm-idUSKBN1WU07Z">Giuliani also received a large payment</a> from a company tied to Ukraine and Russia, but it is not known whether those payments were related to the Biden accusations.)</p>
+      </div>
+
+      <div class="col-sm-5" style="margin-bottom: 25px;">
+        <figure class="figure" style="padding: 0 2em;">
+          <a href="https://www.apnews.com/9834cb4581c9460f9050b5d5cb544f37">
+            <img src="media/20191011yovanovitch.png" class="figure-img img-fluid" style="border: 1px solid black;">
+          </a>
+          <figcaption class="figure-caption">Amb. Yovanovitch <a href="https://www.apnews.com/9834cb4581c9460f9050b5d5cb544f37">testified</a> about why she was fired</figcaption>
+        </figure>
       </div>
     </div>
         
     <div class="row">
       <div class="col-sm-7">
-        <p><span class="header">An alleged &ldquo;quid&rdquo;</span>  On <strong>July 18, 2019</strong>, President Trump <a href="https://www.washingtonpost.com/national-security/trump-ordered-hold-on-military-aid-days-before-calling-ukrainian-president-officials-say/2019/09/23/df93a6ca-de38-11e9-8dc8-498eabc129a0_story.html">ordered a hold on military aid to Ukraine</a>.</p>
+        <p><span class="header">An alleged &ldquo;quid&rdquo;</span>  On <strong>July 18, 2019</strong>, President Trump <a href="https://www.washingtonpost.com/national-security/trump-ordered-hold-on-military-aid-days-before-calling-ukrainian-president-officials-say/2019/09/23/df93a6ca-de38-11e9-8dc8-498eabc129a0_story.html">ordered a hold on military aid to Ukraine</a>. (The hold was ended and the aid <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-opening-statement-congress/index.html">restored on Sept. 11, 2019.</a>)</p>
         
-        <p><span class="header">Incriminating texts</span>  In <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">a series of text messages</a> between <strong>July 19 and Sept. 9, 2019</strong>, volunteer special envoy to Ukraine Kurt Volker and Ambassadors Gordon Soland and Bill Taylor discussed a phone call between President Trump and Ukraine President Zelenskyy. Prior to the Trump-Zelenskyy call, Volker told Zelenskyy&rsquo;s top adviser, &ldquo;assuming President Z convinces Trump he will investigate . . . we will nail down date for visit to Washington.&rdquo; Texts following the call show a debate between the ambassadors over whether Trump was withholding aid to Ukraine and an invitation to visit the White House in exchange for an investigation into Joe Biden.</p>
+        <p><span class="header">Incriminating texts</span>  In <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">a series of text messages</a> between <strong>July 19 and Sept. 9, 2019</strong>, volunteer special envoy to Ukraine Kurt Volker and Ambassadors Gordon Sondland and Bill Taylor discussed a phone call between President Trump and Ukraine President Zelenskyy. Prior to the Trump-Zelenskyy call, Volker told Zelenskyy&rsquo;s top adviser, &ldquo;assuming President Z convinces Trump he will investigate . . . we will nail down date for visit to Washington.&rdquo; Texts following the call show a debate between the ambassadors over whether Trump was withholding aid to Ukraine and an invitation to visit the White House in exchange for an investigation into Joe Biden.</p>
         
-        <p><span class="header">Trump-Zelenskyy call</span>  In the <strong>July 25, 2019</strong> call between President Trump and Ukraine President Zelenskyy, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump urged</a> Zelenskyy to investigate alleged actions by Joe Biden and to locate the Democratic National Committee&rsquo;s 2016 email server (which was hacked by Russia in an effort to help the President win the 2016 election), and to do both investigations in collaboration with the President&rsquo;s personal lawyer. Several weeks later, Zelenskyy <a href="https://www.nytimes.com/2019/10/23/us/politics/ukraine-aid-freeze-impeachment.html">learned that the military aid had been put on hold, but not why</a>.</p>
+        <p><span class="header">Trump-Zelenskyy call</span>  In the <strong>July 25, 2019</strong> call between President Trump and Ukraine President Zelenskyy, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump urged</a> Zelenskyy to investigate alleged actions by Joe Biden and to locate the Democratic National Committee (DNC)&rsquo;s 2016 email server (which was hacked by Russia in an effort to help the President win the 2016 election), and to do both investigations in collaboration with Giuliani, the President&rsquo;s personal lawyer. Several weeks later, Zelenskyy <a href="https://www.nytimes.com/2019/10/23/us/politics/ukraine-aid-freeze-impeachment.html">learned that the military aid had been put on hold, but not why</a>.</p>
       </div>
 
       <div class="col-sm-5" style="margin-bottom: 25px;">
@@ -279,26 +311,128 @@
     </div>
     <div class="row">
       <div class="col-sm-7">
-        <p><span class="header">Text messages released</span>  <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">The text messages between U.S. ambassadors</a> were released by the House Foreign Affairs Committee on <strong>Oct. 3, 2019</strong>. On the same day, special envoy Kurt Volker, who had participated in the texts, was also interviewed by the same committee in a closed session &mdash; Democrats and Republicans have given inconsistent accounts of the substance of the interview. Additionally, <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">the reason why Ambassador Marie Yovanovitch was fired earlier in the year</a> was first reported.</p>
+        <p><span class="header">Text messages released</span>  On <strong>Oct. 3, 2019</strong>, special envoy Kurt Volker, who had participated in the text messages, was interviewed by the House Foreign Affairs Committee in a closed session. Volker provided the <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">text messages between U.S. ambassadors</a>, which were then made public by the House Foreign Affairs Committee. Democrats and Republicans have given otherwise inconsistent accounts of the substance of the interview. Additionally, <a href="https://www.wsj.com/articles/trump-ordered-ukraine-ambassador-removed-after-complaints-from-giuliani-others-11570137147?mod=trending_now_1">the reason why Ambassador Marie Yovanovitch was fired earlier in the year</a> was first reported. And, President Trump asked Ukraine to investigate Biden in a press conference on the White House lawn.</p>
         
-        <p><span class="header">An alleged &ldquo;quo&rdquo;</span>  On <strong>Oct. 4, 2019</strong>, <a href="https://www.nytimes.com/2019/10/04/world/europe/ukraine-biden-burisma.html">Ukraine said it would open an investigation</a> into the Bidens.</p>
+        <p><span class="header">An alleged &ldquo;quo&rdquo;</span>  On approximately Sept. 8, 2019, Ambassador Sondland told Ukraine President Zelenskyy that military aid would be withheld unless he made a public statement that Ukraine would investigate the energy company that made payments to Joe Biden&rsquo;s son, to which Zelenskyy agreed, <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-opening-statement-congress/index.html">according to Taylor</a>, the ambassador. The withheld military aid was <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-opening-statement-congress/index.html">restored on Sept. 11, 2019</a>, and on <strong>Oct. 4, 2019</strong>, <a href="https://www.nytimes.com/2019/10/04/world/europe/ukraine-biden-burisma.html">Ukraine said it would open the investigation</a>.</p>
       </div>
 
       <div class="col-sm-5" style="margin-bottom: 25px;">
-        <figure class="figure">
+        <figure class="figure" style="padding: 0 2em;">
           <a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">
             <img src="media/20191003cnn.png" class="figure-img img-fluid" style="border: 1px solid black;">
           </a>
-          <figcaption class="figure-caption">President Trump asked Ukraine to investigate Joe Biden during a press conference on the White House lawn on Oct. 3, 2019 [<a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">video</a>]</figcaption>
+          <figcaption class="figure-caption">President Trump asks Ukraine to investigate [<a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">video</a>]</figcaption>
         </figure>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-md-5">
         <p><span class="header">Obstruction</span>  The House Committee on Oversight <a href="https://www.nytimes.com/interactive/2019/10/04/us/politics/president-trump-impeachment-inquiry.html">subpoenaed a slew of documents</a> from White House staff, including Chief of Staff Mick Mulvaney and Secretary of State Mike Pompeo, and <a href="https://oversight.house.gov/sites/democrats.oversight.house.gov/files/documents/2019-10-04.EEC%20Engel%20Schiff%20%20re%20Request%20to%20VP%2010-04-19%20Letter%20and%20Schedule.pdf">requested documents</a> from Vice President Mike Pence without a subpoena. In response, the White House sent a letter to the House on <strong>Oct. 8, 2019</strong> stating that it <a href="https://www.cnn.com/2019/10/08/politics/wh-letter-to-pelosi/index.html">will not cooperate with the subpoenas or the impeachment inquiry</a> because, they say, the House is not affording the President due process rights as he would have in a criminal trial &mdash; but the Constitution is clear that an impeachment is not a criminal trial. Refusal to cooperate with subpoenas could likely become another impeachment charge, as it was in <a href="https://watergate.info/impeachment/articles-of-impeachment">the case of President Richard Nixon</a>.</p>
-        <p><span class="header">Yovanovitch deposition</span>  On <strong>Oct. 11, 2019</strong>, Marie Yovanovitch gave closed-door testimony to three House committees. In her opening statements <a href="https://www.apnews.com/9834cb4581c9460f9050b5d5cb544f37">obtained by the Associated Press</a>, she said she was ousted &ldquo;based, as best as I can tell, on unfounded and false claims by people with clearly questionable motives.&rdquo;</p>
+        
+        <p><span class="header">Depositions</span>  During <strong>October 2019</strong>, congressional committees conducted <a href="https://www.cnn.com/interactive/2019/politics/trump-impeachment-inquiry-tracker">eleven private interviews and briefings</a> with Trump Administration officials. Marie Yovanovitch, the fired ambassador to Ukraine, said in her opening statement <a href="https://www.apnews.com/9834cb4581c9460f9050b5d5cb544f37">obtained by the Associated Press</a> that she was ousted &ldquo;based, as best as I can tell, on unfounded and false claims by people with clearly questionable motives.&rdquo; Ambassador Taylor said in his opening statement on Oct. 22, 2019 that Volker, Sondland, Secretary Rick Perry, Sen. Ron Johnson, and Giuliani began an <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-deposition-text-messages/index.html">&ldquo;irregular&rdquo; circumvention of normal State Department relations</a> with Ukraine to push investigations related to Biden and the 2016 hack of the DNC email server. Private interviews are a <a href="https://www.everycrsreport.com/reports/95-949.html">standard procedure</a> for committee investigations, especially when national security interests are involved, and <a href="https://www.everycrsreport.com/reports/R45731.html#_Toc12535700">the full House most recently re-authorized their use on Jan. 9, 2019</a>. Both parties participate in the interviews.</p>
       </div>
+
+      <div class="col-md-7">
+        <div class="card">
+        <div class="card-body">
+        <p style="text-align: center; font-weight: bold;">Depositions</p>
+        <div id="deposition-list">
+          <div class="row">
+            <div class="col-sm-5">
+              Kurt Volker
+              <div class="role">Volunteer Special Envoy to Ukraine</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 3, 2019 &mdash; Says <a href="https://www.cnn.com/2019/10/03/politics/giuliani-ukraine-biden-claims/index.html">Ukraine did not know why aid was withheld</a>. Also provided text messages.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Marie Yovanovitch
+              <div class="role">Fired Ambassador to Ukraine</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 11, 2019 &mdash; Says <a href="https://www.cnn.com/2019/10/03/politics/giuliani-ukraine-biden-claims/index.html">her work to end corruption in Ukraine threatened the financial interests of those pushing for an investigation into Joe Biden</a>.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Fiona Hill
+              <div class="role">White House Adviser</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 14, 2019 &mdash; Says Gordon Sondland, ambassador to the European Union and not Ukraine, was <a href="https://www.cnn.com/2019/10/14/politics/who-is-fiona-hill/index.html">circumventing normal relations with Ukraine</a> with the White House.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              George Kent
+              <div class="role">Deputy Assistant Secretary of State</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 15, 2019 &mdash; Says <a href="https://www.cnn.com/2019/10/15/politics/george-kent-rudy-giuliani-ukraine-house-testimony/index.html">Yovanovitch was fired because by President Trump after listening to Giuliani</a>.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Michael McKinley
+              <div class="role">Adviser to Secretary of State Mike Pompeo</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 16, 2019 &mdash; Says he <a href="https://www.cnn.com/2019/10/16/politics/michael-mckinley-deposition-pompeo-marie-yovanovitch/index.html">resigned in solidarity with Yovanovitch</a>.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Gordon Sondland
+              <div class="role">Ambassador to the European Union</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 17, 2019 &mdash; Says <a href="https://www.cnn.com/2019/10/17/politics/read-eu-ambassador-trump-congress-testimony/index.html">he thought U.S. was pressuring Ukraine on legitimate anti-corruption issues, distanced himself from White House decisions</a>.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Bill Taylor
+              <div class="role">Top Diplomat in Ukraine</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 22, 2019 &mdash; Says Volker, Sondland, and others began an <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-deposition-text-messages/index.html">&ldquo;irregular&rdquo; circumvention of normal State Department relations</a>.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Laura Cooper
+              <div class="role">Deputy Assistant Secretary of Defense</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 23, 2019 &mdash; The substance of her testimony has not been publicly reported.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5">
+              Philip Reeker
+              <div class="role">State Department Official</div>
+            </div>
+            <div class="col-sm-7">
+              Oct. 26, 2019 &mdash; The substance of his testimony has not been publicly reported.
+            </div>
+          </div>
+
+        </div> <!-- /#deposition-list -->
+        </div> <!-- /card-body -->
+        </div> <!-- /card -->
+      </div>
+
     </div>
 
     <hr>
@@ -317,8 +451,7 @@
       </div>
     </div>
 
-
-      </div> <!-- /#page-home -->
+      </div> <!-- /#page-chronology -->
 
       <div id="page-charges" class="container">
         <h1>
@@ -337,9 +470,11 @@
 
         <h2>What charges are being considered for President Trump?</h2>
 
-        <p><span class="header">Foreign Assistance in the Election</span> The White House has said that in a July 25, 2019 phone call, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">President Trump asked Ukraine president Volodymr Zelenskyy for a “favor”</a> to investigate the President’s chief political opponent and to locate the Democratic National Committee (DNC)’s 2016 email server, and on Oct. 3, 2019, <a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">President Trump suggested Ukraine and China should open an investigation</a> during a press conference. The President asked Zelenskyy to coordinate the investigations with the President’s personal lawyer, Rudy Giuliani. Although framed as an official investigation into corruption, the focus on the President’s political opponents and the involvement of the President’s personal lawyer suggest the President’s intent was political. Foreign entities are <a href="https://www.law.cornell.edu/uscode/text/52/30121">prohibited by law</a> from making contributions to political campaigns, including by providing favors of material value, and an impeachment charge could be based on a violation of law or perceived norms for foreign interference in elections.</p>
+        <p><span class="header">Foreign Assistance in the Election</span> The White House has said that in a July 25, 2019 phone call, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">President Trump asked Ukraine president Volodymr Zelenskyy for a “favor”</a> to investigate the President’s chief political opponent and to locate the Democratic National Committee (DNC)’s 2016 email server, and on Oct. 3, 2019, <a href="https://www.cnn.com/2019/10/03/politics/trump-biden-call-xi-secure-server/index.html">President Trump suggested Ukraine and China should open an investigation</a> during a press conference. The President asked Zelenskyy to coordinate the investigations with the President’s personal lawyer, Rudy Giuliani. Although framed as an official investigation into corruption, the focus on the President’s political opponent and the involvement of the President’s personal lawyer suggest the President’s intent was political. Foreign entities are <a href="https://www.law.cornell.edu/uscode/text/52/30121">prohibited by law</a> from making contributions to political campaigns, including by providing favors of material value, and an impeachment charge could be based on a violation of law or perceived norms for foreign interference in elections or abuse of power.</p>
 
-        <p><span class="header">Extortion or Quid Pro Quo</span> One of the President’s foreign policy goals has been to get European countries to step up their support for military security, rather than relying on the United States. According to the White House, in the July 25, 2019 <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy phone call</a>, the President told Zelenskyy that he thought the United States’s security aid to Ukraine made the nations’ relationship not “reciprocal,” and then in his next sentence asked Zelenskyy for the “favor” described above. Shortly before the call, <a href="https://www.msnbc.com/morning-joe/watch/trump-shifts-explanation-for-withholding-ukraine-aid-69864517615">the President had halted that security aid</a> and <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">postponed a potential visit by Zelenskyy to the White House</a>. Although not stated in clear words on the call, the President and Zelenskyy likely understood the President as asking Ukraine to make the relationship reciprocal by performing the favor &mdash; a quid pro quo. Withholding aid and a White House visit to coerce Ukraine to perform an investigation would be extortion (even if Zelenskyy only found out about the <a href="https://www.nytimes.com/2019/10/23/us/politics/ukraine-aid-freeze-impeachment.html">withheld aid</a> and <a href="https://www.nytimes.com/2019/09/23/us/politics/trump-un-biden-ukraine.html">visit</a> a few weeks later). Both quid pro quo and extortion are generally accepted tools in foreign policy and well within the President’s foreign policy powers &mdash; so long as the President is conducting foreign affairs.</p>
+        <p><span class="header">Quid Pro Quo</span> One of the President’s foreign policy goals has been to get European countries to step up their support for military security, rather than relying on the United States. According to the White House, in the July 25, 2019 <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Trump-Zelenskyy phone call</a>, the President told Zelenskyy that he thought the United States’s security aid to Ukraine made the nations’ relationship not “reciprocal,” and then in his next sentence asked Zelenskyy for the “favor” described above. Although not stated in clear words on the call, Zelenskyy likely understood the President as asking Ukraine to make the relationship reciprocal by performing the favor &mdash; a quid pro quo. Quid pro quo is a generally accepted tool in foreign policy and well within the President’s foreign policy powers &mdash; so long as the President is conducting foreign affairs.</p>
+
+        <p><span class="header">Extortion</span> Shortly before the call, <a href="https://www.msnbc.com/morning-joe/watch/trump-shifts-explanation-for-withholding-ukraine-aid-69864517615">the President had halted that security aid</a> and <a href="https://foreignaffairs.house.gov/_cache/files/5/0/50759349-fe81-4444-a990-65c92528de82/50EE8A2F1CFC493A98876200762152FC.chairmen-letter-on-state-departmnent-texts-10-03-19.pdf">postponed a potential visit by Zelenskyy to the White House</a>. Zelenskyy found out about the <a href="https://www.nytimes.com/2019/10/23/us/politics/ukraine-aid-freeze-impeachment.html">withheld aid</a> and <a href="https://www.nytimes.com/2019/09/23/us/politics/trump-un-biden-ukraine.html">visit</a> a few weeks later, and was told in September 2019 that the military aid was withheld <a href="https://www.cnn.com/2019/10/22/politics/bill-taylor-deposition-text-messages/index.html">until Zelenskyy announced an investigation into the energy company tied to Joe Biden&rsquo;s son</a>, according to Ambassador Bill Taylor in his deposition. Withholding aid and a White House visit to coerce Ukraine to perform an investigation is extortion, but extortion is a generally accepted tool in foreign policy and well within the President’s foreign policy powers &mdash; so long as the President is conducting foreign affairs.</p>
 
         <p><span class="header">Emoluments</span> According to the White House, in the July 25, 2019 phone call between President Trump and Ukraine president Volodymr Zelenskyy, <a href="https://www.nytimes.com/interactive/2019/09/25/us/politics/trump-ukraine-transcript.html">Zelenskyy said he had stayed at the President’s Trump Tower property</a> on his last visit to the United States, among other thanks and praise, to which the President responded positively.  Since the President personally benefits from business at his properties, foreign leaders’ stays at his properties may be a constitutionally prohibited emolument.</p>
 
